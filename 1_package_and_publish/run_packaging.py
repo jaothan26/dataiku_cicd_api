@@ -25,6 +25,7 @@ print("New package created with name '{}'".format(api_package_id))
 # Uncomment the next line to download and use the zip file (to upload it to an Artefact repository for example)
 # api_service.download_package_to_file(api_package_id, api_package_id + ".zip")
 version_as_stream = api_service.download_package_stream(api_package_id)
+print("Version_as_streamname is '{}'".format(version_as_stream))
 print("Stream handle retrieved on the package")
 
 ####################
