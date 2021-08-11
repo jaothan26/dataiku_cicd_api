@@ -64,7 +64,7 @@ def test_missing_param(params):
         "Intl_Charge": 2.7,
         "Total_Charge": 75.56,
         "CustServ_Calls": 1,
-        "cluster_labels": "cluster_0"
+        "cluster_labels": "cluster_4"
     }
     prediction = client.predict_record(params["api_endpoint_id"], record_to_predict)
     assert prediction['result']['ignored'] == True , "Request status status should be ignored = true is {}".format(prediction['result'])
