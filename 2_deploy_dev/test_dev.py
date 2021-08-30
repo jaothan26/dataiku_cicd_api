@@ -34,7 +34,7 @@ def test_standard_call(params):
         "Intl_Charge": 2.7,
         "Total_Charge": 75.56,
         "CustServ_Calls": 1,
-        "cluster_labels": "cluster_4"
+        "cluster_labels": "cluster_0"
     }
     prediction = client.predict_record(params["api_endpoint_id"], record_to_predict)
     assert prediction['result']['prediction'] == '1', "Prediction should be 1 but is {}".format(prediction['result']['prediction'])
